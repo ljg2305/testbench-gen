@@ -1,3 +1,7 @@
+hello /* Comments at the begining of file*/ world
+/*are just here to be thrown away
+by the compiler*/
+//and one for luck
 module TopLevel (
 	input clk,    // Clock
 	input reset,  // Asynchronous reset active low
