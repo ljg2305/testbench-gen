@@ -37,6 +37,7 @@ def importFile(dutFilePath):
 
 	for line in dutFile:
 		print(line.strip('\n'))
+	print(dutFile)
 	print()
 
 	return dutFile
@@ -50,7 +51,8 @@ def generateOuptutFile(dutFilePath):
 			dutTbFilePath = dutFilePath+"TB"+extention
 
 
-	try:
+	try: #this was smart but not actually a good method
+	
 		open(dutTbFilePath, "r")
 		overwrite =  input("The requested testbench already exists, do you want to overwrite the file? y/n: ")
 		validInput = False
